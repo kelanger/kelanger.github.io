@@ -1,78 +1,193 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Kevin Langer's Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
 
-    <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Kevin Langer</li>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/experience.html">Experience</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-        </ul>
-    </div>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Kevin Langer's Portfolio</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/styles.css">
+	  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:700" rel="stylesheet">
+	</head>	
+	<body>
 
-    <header class="profile-header">
-      <img src="images/kevin.jpg" alt="Photo of Kevin Langer" class="profile-image">
-      <h1 class="tag name">I'm Kevin, nice to meet you!</h1>
-      <p class="tag location">I live in Oakland, California.</p>
-    </header>
+		<header class="clearfix">
+			<div class="header-container">
+				<h1 class="name">Kevin Langer</h1>
+				<nav>
+					<a href="#home">HOME</a>
+	 				<a href="#portfolio">PORTFOLIO</a>
+	 				<a href="#skills">SKILLS</a>
+					<a href="#contact">CONTACT</a>
+				</nav>
+			</div>
+		</header>
+		<div id="home" class="banner clearfix">
+			<img class="header-image" src="images/responsive-layout-profile.png" alt="Profile picture as vector illustraton.">
+			<div class="marquee-text">
+				<p>
+					Toffee candy canes I love lemon drops tart croissant. Fruitcake macaroon liquorice brownie I love sweet. Ice cream liquorice tootsie roll I love pastry. Sweet roll biscuit gummi bears dessert candy candy canes chocolate cake. Dragée oat cake chocolate powder cotton candy tootsie roll liquorice danish. Dragée gummies apple pie marzipan caramels lemon drops. Pastry cheesecake I love cake bear claw danish I love. Caramels icing caramels I love chocolate bar lemon drops sweet roll liquorice. Carrot cake tootsie roll soufflé. Bonbon cotton candy liquorice cupcake. Brownie bonbon chupa chups cupcake. Sugar plum oat cake pudding brownie.
+				</p>
+			</div>
+		</div>
+		<div id="portfolio" class="content-1 clearfix">
+			<h2>PORTFOLIO</h2>
+			
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-1.png" alt="Vector illustraton of a portfolio.">
+				<h3>Marketing Page</h3>
+				<p>
+					This project shows the front page of a marketing website meant for specific business I'm interested in.
+				</p>
+			</div>
 
-    <main class="flex">
-      <div class="card">
-        <h2>Background</h2>
-        <p>I'm Visual Designer with experience in Motion Graphic Design and UX/UI Design. I'm at home working in a group and contributing all I can to meet our goals, usually employing a little creative thinking to rise above challenges. I've worked within marketing, product development, design teams, and other groups.</p>
-        <p>I’m excited to be diving deeper into web development so I can build all the websites I design.</p>
-        <img src="images/white-board.jpeg" class="card-photo" alt="Man looking at white board with work taped on it.">
-      </div> 
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-2.png" alt="Vector illustraton of a search page.">
+				<h3>Search Page</h3>
+				<p>
+					This project searches through a specific database to find information that the user is trying to look up.
+				</p>
+			</div>
 
-      <div class="card">
-        <h2>Goals</h2>
-        <p>To become adept at building and creating websites and get aquainted with:</p>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Bootstrap</li>
-          <li>Python</li>
-          <li>PHP</li>
-          <li>Java</li>
-          <li>Swift</li>
-        </ul>
-        <p>Hopefully by improving my skills in web development I can become a better visual designer.</p>
-        <img src="images/laptop.jpeg" class="card-photo" alt="Laptop with code on the screen.">
-      </div> 
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-3.png" alt="Vector illustraton of a travel app.">
+				<h3>Travel App</h3>
+				<p>
+					This project compares travel times based on different transportation methods and tells you the best one.
+				</p>
+			</div>
 
-      <div class="card">
-        <h2>Hobbies</h2>
-        <p>Aside from spending time working on my web development skills, I also have a few hobbies I enjoy:</p>
-        <ul>
-          <li>Photography</li>
-          <li>Illustration</li>
-          <li>Reading</li>
-          <li>Board Games</li>
-          <li>Candle Making</li>
-          <li>Coffee Roasting</li>
-          <li>Dog Training</li>
-        </ul>
-        <p>I enjoy being able to work some of the things I love to do into my everyday projects.</p>
-        <img src="images/coffee.jpeg" class="card-photo" alt="Latte being poured.">
-      </div> 
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-4.png" alt="Vector illustraton of a map with pins.">
+				<h3>Map of Favorite Spots</h3>
+				<p>
+					This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+				</p>
+			</div>
 
-    </main>
-    <footer>
-      <ul>
-        <li><a href="https://twitter.com/threekevins" class="social twitter" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/kevinlanger/" class="social linkedin" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/kelanger" class="social github" target="_blank">Github</a></li>
-        <li><a href="https://www.flickr.com/photos/kevlanger" class="social flickr" target="_blank">Flickr</a></li>
-      </ul>
-      <p class="copyright">&copy; 2017, Kevin Langer</p>
-    </footer>
-  </body>
-  </html>
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-5.png" alt="Vector illustraton of a photo gallery.">
+				<h3>Photo Gallery</h3>
+				<p>
+					This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.
+				</p>
+			</div>	
+
+			<div class="project">
+				<img class="portfolio-image" src="images/portfolio-6.png" alt="Vector illustraton of a calculator web page.">
+				<h3>Calculator</h3>
+				<p>
+					Someone can enter in the numbers they want, and press the big blue button and get the results.
+				</p>
+			</div>
+
+		</div> <!-- End of content-1 div -->
+
+		<div id="skills" class="content-2 clearfix">
+			<h2>Skills</h2>
+			
+			<div class="project">
+				<div class="skill-1">
+					<div class="skill-icon">
+						<img src="images/html5.svg" alt="HTML5 logo">
+					</div>
+				</div>
+				<h3>HTML5</h3>
+				<p>
+					This project shows the front page of a marketing website meant for specific business I'm interested in.
+				</p>
+			</div>
+
+			<div class="project">
+				<div class="skill-2">
+					<div class="skill-icon">
+						<img src="images/wordpress.svg" alt="WordPress logo">
+					</div>
+				</div>
+				<h3>WordPress</h3>
+				<p>
+					This project searches through a specific database to find information that the user is trying to look up.
+				</p>
+			</div>
+
+			<div class="project">
+				<div class="skill-3">
+					<div class="skill-icon">	
+						<img src="images/react.svg" alt="React logo">
+					</div>
+				</div>
+				<h3>React</h3>
+				<p>
+					This project compares travel times based on different transportation methods and tells you the best one.
+				</p>
+			</div>
+
+			<div class="project">
+				<div class="skill-4">
+					<div class="skill-icon">
+						<img src="images/python.svg" alt="Python logo">
+					</div>
+				</div>
+				<h3>Python</h3>
+				<p>
+					This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+				</p>
+			</div>
+
+			<div class="project">
+				<div class="skill-5">
+					<div class="skill-icon">
+						<img src="images/node-js.svg" alt="Node.js logo">
+					</div>
+				</div>
+				<h3>Node.js</h3>
+				<p>
+					This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.
+				</p>
+			</div>	
+
+			<div class="project">
+				<div class="skill-6">
+					<div class="skill-icon">
+						<img src="images/camera-retro.svg" alt="Retro camera icon">
+					</div>
+				</div>
+				<h3>Photography</h3>
+				<p>
+					Someone can enter in the numbers they want, and press the big blue button and get the results.
+				</p>
+			</div>
+
+		</div> <!-- End of content-2 div -->
+		<div id="contact" class="content-3">
+			
+			<h2>CONTACT</h2>
+			<p>
+				If you're interested in chatting or want more information about what I've been working on I'd love to hear from you!
+			</p>
+
+			<p>
+				Phone <a href="tel:1-111-555-1234">+1 (111) 555-1234</a>
+			</p>
+
+			<p>
+				Email <a href="mailto:email@yoursite.com?Subject=Hello">email@yoursite.com</a>
+			</p>
+
+		</div><!-- End of contact div -->
+
+		<footer>
+			<h3>Kevin Langer</h3>
+			<ul>
+				<li class="mobile"><a href="#">BACK TO TOP</a></li>
+				<li class="desktop"><a href="#home">HOME</a></li>
+				<li class="desktop"><a href="#portfolio">PORTFOLIO</a></li>
+				<li class="desktop"><a href="#skills">SKILLS</a></li>
+				<li class="desktop"><a href="#contact">CONTACT</a></li>
+			</ul>
+		</footer>
+
+	</body>
+
+</html>
