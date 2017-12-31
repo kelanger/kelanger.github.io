@@ -1,193 +1,160 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    </head>
+    <body>
 
-	<head>
-	  <meta charset="utf-8">
-	  <title>Kevin Langer's Portfolio</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="css/normalize.css">
-	  <link rel="stylesheet" href="css/styles.css">
-	  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:700" rel="stylesheet">
-	</head>	
-	<body>
-
-		<header class="clearfix">
-			<div class="header-container">
-				<h1 class="name">Kevin Langer</h1>
-				<nav>
-					<a href="#home">HOME</a>
-	 				<a href="#portfolio">PORTFOLIO</a>
-	 				<a href="#skills">SKILLS</a>
-					<a href="#contact">CONTACT</a>
-				</nav>
-			</div>
+		<header>
+			<h1>The Code Review</h1>
 		</header>
-		<div id="home" class="banner clearfix">
-			<img class="header-image" src="images/responsive-layout-profile.png" alt="Profile picture as vector illustraton.">
-			<div class="marquee-text">
-				<p>
-					Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!
-				</p>
-			</div>
+
+		<div class="intro">
+			<h2>Signup for our newsletter</h2>
+			<p>Get the latest news on how your code is doing right in your inbox.</p>
+			<hr>
+			<hr>
 		</div>
-		<div id="portfolio" class="content-1 clearfix">
-			<h2>PORTFOLIO</h2>
-			
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-1.png" alt="Vector illustraton of a portfolio.">
-				<h3>Marketing Page</h3>
-				<p>
-					This project shows the front page of a marketing website meant for specific business I'm interested in.
-				</p>
-			</div>
 
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-2.png" alt="Vector illustraton of a search page.">
-				<h3>Search Page</h3>
-				<p>
-					This project searches through a specific database to find information that the user is trying to look up.
-				</p>
-			</div>
+      	<form action="index.html" method="post">
+	        
+	        <fieldset>
+	          
+		        <legend>Contact Information</legend>
+		          
+		        <div class="flex-container">
+			        <label for="name">Full Name</label>
+			        <input type="text" id="name" name="user_name" placeholder="Required">
+		        </div>
+		          
+		        <div class="flex-container">
+		        	<label for="mail">Email Address</label>
+		        	<input type="email" id="mail" name="user_email" placeholder="Required">
+		        </div>
 
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-3.png" alt="Vector illustraton of a travel app.">
-				<h3>Travel App</h3>
-				<p>
-					This project compares travel times based on different transportation methods and tells you the best one.
-				</p>
-			</div>
+		        
+		        <div class="flex-container">
+		        	<label for="tel">Phone Number</label>
+		        	<input type="tel" id="tel" name="user_tel">
+		        </div>
 
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-4.png" alt="Vector illustraton of a map with pins.">
-				<h3>Map of Favorite Spots</h3>
-				<p>
-					This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
-				</p>
-			</div>
+		        
+		        <div class="flex-container">
+		        	<label for="address">Street Address</label>
+		        	<input type="text" id="address" name="user_address">
+		        </div>
 
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-5.png" alt="Vector illustraton of a photo gallery.">
-				<h3>Photo Gallery</h3>
-				<p>
-					This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.
-				</p>
-			</div>	
+		        <div class="flex-container">
+			        <label for="city">City</label>
+			        <input type="text" id="city" name="user_city">
+		    	</div>
+		        
+		        <div class="flex-container">
+			        <label for="state">State</label>
+			        <select id="state" name="user_state">
+			 
+			            <option value="choose_state">Choose a State</option>
+			            <option value="alabama">Alabama</option>
+						<option value="alaska">Alaska</option>
+						<option value="arkansas">Arkansas</option>
+						<option value="california">California</option>
+						<option value="colorado">Colorado</option>
+						<option value="connecticut">Connecticut</option>
+						<option value="delaware">Delaware</option>
+						<option value="florida">Florida</option>
+						<option value="georgia">Georgia</option>
+						<option value="hawaii">Hawaii</option>
+						<option value="idaho">Idaho</option>
+						<option value="illinois">Illinois</option>
+						<option value="indiana">Indiana</option>
+						<option value="iowa">Iowa</option>
+						<option value="kansas">Kansas</option>
+						<option value="kentucky">Kentucky</option>
+						<option value="louisiana">Louisiana</option>
+						<option value="maine">Maine</option>
+						<option value="maryland">Maryland</option>
+						<option value="massachusetts">Massachusetts</option>
+						<option value="michigan">Michigan</option>
+						<option value="minnesota">Minnesota</option>
+						<option value="mississippi">Mississippi</option>
+						<option value="missouri">Missouri</option>
+						<option value="montana">Montana</option>
+						<option value="nebraska">Nebraska</option>
+						<option value="nevada">Nevada</option>
+						<option value="new_hampshire">New Hampshire</option>
+						<option value="new_jersey">New Jersey</option>
+						<option value="new_mexico">New Mexico</option>
+						<option value="new_york">New York</option>
+						<option value="north_carolina">North Carolina</option>
+						<option value="north_dakota">North Dakota</option>
+						<option value="ohio">Ohio</option>
+						<option value="oklahoma">Oklahoma</option>
+						<option value="oregon">Oregon</option>
+						<option value="pennsylvania">Pennsylvania</option>
+						<option value="rhode_island">Rhode Island</option>
+						<option value="south_carolina">South Carolina</option>
+						<option value="south_dakota">South Dakota</option>
+						<option value="tennessee">Tennessee</option>
+						<option value="texas">Texas</option>
+						<option value="utah">Utah</option>
+						<option value="vermont">Vermont</option>
+						<option value="virginia">Virginia</option>
+						<option value="washington">Washington</option>
+						<option value="west_virginia">West Virginia</option>
+						<option value="wisconsin">Wisconsin</option>
+						<option value="wyoming">Wyoming</option>
 
-			<div class="project">
-				<img class="portfolio-image" src="images/portfolio-6.png" alt="Vector illustraton of a calculator web page.">
-				<h3>Calculator</h3>
-				<p>
-					Someone can enter in the numbers they want, and press the big blue button and get the results.
-				</p>
-			</div>
+			        </select>
+		        </div>
 
-		</div> <!-- End of content-1 div -->
+		        <div class="flex-container">
+		        	<label for="zip">Zip Code</label>
+		        	<input type="text" id="zip" name="user_zip" maxlength="5" size="5">
+		        </div>
+	        
+	        </fieldset>
+	        
+        	<hr>
 
-		<div id="skills" class="content-2 clearfix">
-			<h2>Skills</h2>
-			
-			<div class="project">
-				<div class="skill-1">
-					<div class="skill-icon">
-						<img src="images/html5.svg" alt="HTML5 logo">
-					</div>
-				</div>
-				<h3>HTML5</h3>
-				<p>
-					HTML5 is a markup language used for structuring and presenting content on the World Wide Web.
-				</p>
-			</div>
+	        <fieldset>
+	          
+		        <legend>Newsletter</legend>
 
-			<div class="project">
-				<div class="skill-2">
-					<div class="skill-icon">
-						<img src="images/wordpress.svg" alt="WordPress logo">
-					</div>
-				</div>
-				<h3>WordPress</h3>
-				<p>
-					WordPress is a free and open-source content management system based on PHP and MySQL.
-				</p>
-			</div>
+		        <label class="boxes">Select the newsletters you would like to recieve</label>
+		        <input type="checkbox" id="html_news" value="html_news" name="html_news"><label class="radio_checks" for="html_news">HTML News</label><br>
+		        <input type="checkbox" id="css_news" value="css_news" name="css_news"><label class="radio_checks" for="css_news">CSS News</label><br>
+		        <input type="checkbox" id="javascript_news" value="javascript_news" name="javascript_news"><label class="radio_checks" for="javascript_news">Javascript News</label><br>
+		        <br>
+		        <label class="boxes">Newsletter format</label>
+		        <input type="radio" id="html_format" value="html_format" name="format"><label for="html_format" class="radio_checks">HTML</label><br>
+		        <input type="radio" id="plain_text_format" value="plain_text_format" name="format"><label for="plain_text_format" class="radio_checks">Plain text</label><br>
+	        	<br>
+		        <label for="other_topics" class="boxes">Other topics you'd like to hear about</label>
+		        <textarea id="other_topics" name="other_topics" rows="5"></textarea>
 
-			<div class="project">
-				<div class="skill-3">
-					<div class="skill-icon">	
-						<img src="images/react.svg" alt="React logo">
-					</div>
-				</div>
-				<h3>React</h3>
-				<p>
-					In computing, React is a JavaScript library for building user interfaces.
-				</p>
-			</div>
+		        <button type="submit">Sign Up</button>
+	          
+	        </fieldset>
+        
+      	</form>
+    	
+      	<footer>
+      		<p>Copyright The Code Review</p>
+      	</footer>
 
-			<div class="project">
-				<div class="skill-4">
-					<div class="skill-icon">
-						<img src="images/python.svg" alt="Python logo">
-					</div>
-				</div>
-				<h3>Python</h3>
-				<p>
-					Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991.
-				</p>
-			</div>
-
-			<div class="project">
-				<div class="skill-5">
-					<div class="skill-icon">
-						<img src="images/node-js.svg" alt="Node.js logo">
-					</div>
-				</div>
-				<h3>Node.js</h3>
-				<p>
-					Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side.
-				</p>
-			</div>	
-
-			<div class="project">
-				<div class="skill-6">
-					<div class="skill-icon">
-						<img src="images/camera-retro.svg" alt="Retro camera icon">
-					</div>
-				</div>
-				<h3>Photography</h3>
-				<p>
-					While not coding, I love honing my photography skills and then using my photographs in the websites I create.
-				</p>
-			</div>
-
-		</div> <!-- End of content-2 div -->
-		<div id="contact" class="content-3">
-			
-			<h2>CONTACT</h2>
-			<p>
-				If you're interested in chatting or want more information about what I've been working on I'd love to hear from you!
-			</p>
-
-			<p>
-				Phone <a href="tel:1-111-555-1234">+1 (111) 555-1234</a>
-			</p>
-
-			<p>
-				Email <a href="mailto:email@yoursite.com?Subject=Hello">email@yoursite.com</a>
-			</p>
-
-		</div><!-- End of contact div -->
-
-		<footer>
-			<h3>Kevin Langer</h3>
-			<ul>
-				<li class="mobile"><a href="#">BACK TO TOP</a></li>
-				<li class="desktop"><a href="#home">HOME</a></li>
-				<li class="desktop"><a href="#portfolio">PORTFOLIO</a></li>
-				<li class="desktop"><a href="#skills">SKILLS</a></li>
-				<li class="desktop"><a href="#contact">CONTACT</a></li>
-			</ul>
-		</footer>
-
-	</body>
-
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
