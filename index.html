@@ -1,160 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Code Review</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
 
-		<header>
-			<h1>The Code Review</h1>
-		</header>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Searchable Photo Gallery</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/lightbox.min.css">
+	  <link rel="stylesheet" href="css/styles.css">
+	</head>	
+	<body>
+		<div class="container">
+			<header>
+				<input id="search" name="search" placeholder="Search" type="text" data-list=".list">
+			</header>
+			<ul class="list">	
+				<li data-keywords="Hay, Bale, Field, Clouds"><a href="photos/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg"  alt="Hay Bales" class="photo" ></a></li>
 
-		<div class="intro">
-			<h2>Signup for our newsletter</h2>
-			<p>Get the latest news on how your code is doing right in your inbox.</p>
-			<hr>
-			<hr>
+				<li data-keywords="Lake, Calm, Mountains, Snow, Clouds"><a href="photos/02.jpg" data-lightbox="gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="photos/thumbnails/02.jpg" alt="Lake" class="photo"></a></li>
+
+				<li data-keywords="Canyon, Mountains, Trees, Clouds, Grass"><a href="photos/03.jpg" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="photos/thumbnails/03.jpg" alt="Canyon" class="photo"></a></li>
+
+				<li data-keywords="Iceberg, Snow, Clouds"><a href="photos/04.jpg" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn't snow today."><img src="photos/thumbnails/04.jpg" alt="Iceberg" class="photo"></a></li>
+
+				<li data-keywords="Desert, Clouds, Canyon, Trees"><a href="photos/05.jpg" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="photos/thumbnails/05.jpg" alt="Desert" class="photo"></a></li>
+				
+				<li data-keywords="Fall, Trees, Bridge, Grass"><a href="photos/06.jpg" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img src="photos/thumbnails/06.jpg" alt="Fall" class="photo"></a></li>
+				
+				<li data-keywords="Plantation, Mountains, Trees, Grass"><a href="photos/07.jpg" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!"><img src="photos/thumbnails/07.jpg" alt="Plantation" class="photo"></a></li>
+				
+				<li data-keywords="Dunes, Clouds, Sand, Grass"><a href="photos/08.jpg" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="photos/thumbnails/08.jpg" alt="Dunes" class="photo"></a></li>
+				
+				<li data-keywords="Countryside, Land, Trees, Road"><a href="photos/09.jpg" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane."><img src="photos/thumbnails/09.jpg" alt="Countryside Lane" class="photo"></a></li>
+				
+				<li data-keywords="Sunset, Beach, Sea, Ocean, Trees, Clouds"><a href="photos/10.jpg" data-lightbox="gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="photos/thumbnails/10.jpg" alt="Sunset" class="photo"></a></li>
+				
+				<li data-keywords="Cave, Grass, Trees, Clouds, Road"><a href="photos/11.jpg" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="photos/thumbnails/11.jpg" alt="Cave" class="photo"></a></li>
+				
+				<li data-keywords="Bluebells, Mountains, Clouds, Grass, Flowers"><a href="photos/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="photos/thumbnails/12.jpg" alt="Bluebells" class="photo"></a></li>
+			</ul>
 		</div>
 
-      	<form action="index.html" method="post">
-	        
-	        <fieldset>
-	          
-		        <legend>Contact Information</legend>
-		          
-		        <div class="flex-container">
-			        <label for="name">Full Name</label>
-			        <input type="text" id="name" name="user_name" placeholder="Required">
-		        </div>
-		          
-		        <div class="flex-container">
-		        	<label for="mail">Email Address</label>
-		        	<input type="email" id="mail" name="user_email" placeholder="Required">
-		        </div>
-
-		        
-		        <div class="flex-container">
-		        	<label for="tel">Phone Number</label>
-		        	<input type="tel" id="tel" name="user_tel">
-		        </div>
-
-		        
-		        <div class="flex-container">
-		        	<label for="address">Street Address</label>
-		        	<input type="text" id="address" name="user_address">
-		        </div>
-
-		        <div class="flex-container">
-			        <label for="city">City</label>
-			        <input type="text" id="city" name="user_city">
-		    	</div>
-		        
-		        <div class="flex-container">
-			        <label for="state">State</label>
-			        <select id="state" name="user_state">
-			 
-			            <option value="choose_state">Choose a State</option>
-			            <option value="alabama">Alabama</option>
-						<option value="alaska">Alaska</option>
-						<option value="arkansas">Arkansas</option>
-						<option value="california">California</option>
-						<option value="colorado">Colorado</option>
-						<option value="connecticut">Connecticut</option>
-						<option value="delaware">Delaware</option>
-						<option value="florida">Florida</option>
-						<option value="georgia">Georgia</option>
-						<option value="hawaii">Hawaii</option>
-						<option value="idaho">Idaho</option>
-						<option value="illinois">Illinois</option>
-						<option value="indiana">Indiana</option>
-						<option value="iowa">Iowa</option>
-						<option value="kansas">Kansas</option>
-						<option value="kentucky">Kentucky</option>
-						<option value="louisiana">Louisiana</option>
-						<option value="maine">Maine</option>
-						<option value="maryland">Maryland</option>
-						<option value="massachusetts">Massachusetts</option>
-						<option value="michigan">Michigan</option>
-						<option value="minnesota">Minnesota</option>
-						<option value="mississippi">Mississippi</option>
-						<option value="missouri">Missouri</option>
-						<option value="montana">Montana</option>
-						<option value="nebraska">Nebraska</option>
-						<option value="nevada">Nevada</option>
-						<option value="new_hampshire">New Hampshire</option>
-						<option value="new_jersey">New Jersey</option>
-						<option value="new_mexico">New Mexico</option>
-						<option value="new_york">New York</option>
-						<option value="north_carolina">North Carolina</option>
-						<option value="north_dakota">North Dakota</option>
-						<option value="ohio">Ohio</option>
-						<option value="oklahoma">Oklahoma</option>
-						<option value="oregon">Oregon</option>
-						<option value="pennsylvania">Pennsylvania</option>
-						<option value="rhode_island">Rhode Island</option>
-						<option value="south_carolina">South Carolina</option>
-						<option value="south_dakota">South Dakota</option>
-						<option value="tennessee">Tennessee</option>
-						<option value="texas">Texas</option>
-						<option value="utah">Utah</option>
-						<option value="vermont">Vermont</option>
-						<option value="virginia">Virginia</option>
-						<option value="washington">Washington</option>
-						<option value="west_virginia">West Virginia</option>
-						<option value="wisconsin">Wisconsin</option>
-						<option value="wyoming">Wyoming</option>
-
-			        </select>
-		        </div>
-
-		        <div class="flex-container">
-		        	<label for="zip">Zip Code</label>
-		        	<input type="text" id="zip" name="user_zip" maxlength="5" size="5">
-		        </div>
-	        
-	        </fieldset>
-	        
-        	<hr>
-
-	        <fieldset>
-	          
-		        <legend>Newsletter</legend>
-
-		        <label class="boxes">Select the newsletters you would like to recieve</label>
-		        <input type="checkbox" id="html_news" value="html_news" name="html_news"><label class="radio_checks" for="html_news">HTML News</label><br>
-		        <input type="checkbox" id="css_news" value="css_news" name="css_news"><label class="radio_checks" for="css_news">CSS News</label><br>
-		        <input type="checkbox" id="javascript_news" value="javascript_news" name="javascript_news"><label class="radio_checks" for="javascript_news">Javascript News</label><br>
-		        <br>
-		        <label class="boxes">Newsletter format</label>
-		        <input type="radio" id="html_format" value="html_format" name="format"><label for="html_format" class="radio_checks">HTML</label><br>
-		        <input type="radio" id="plain_text_format" value="plain_text_format" name="format"><label for="plain_text_format" class="radio_checks">Plain text</label><br>
-	        	<br>
-		        <label for="other_topics" class="boxes">Other topics you'd like to hear about</label>
-		        <textarea id="other_topics" name="other_topics" rows="5"></textarea>
-
-		        <button type="submit">Sign Up</button>
-	          
-	        </fieldset>
-        
-      	</form>
-    	
-      	<footer>
-      		<p>Copyright The Code Review</p>
-      	</footer>
-
-    </body>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/lightbox.min.js"></script>
+		<script src="js/jquery.hideseek.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
-
-
-
-
-
-
-
-
-
