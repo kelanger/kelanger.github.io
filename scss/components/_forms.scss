@@ -1,0 +1,38 @@
+// ==========================================================================
+// Form Elements
+// ==========================================================================
+
+.form {
+	@include e(label) {
+		@include m(hidden) {
+			display: none;
+		}
+		display: block;
+		margin-bottom: em(10px);
+	}
+
+	@include e(input) {
+		font-size : em(16px);
+		// margin-bottom: em(20px, 18px);
+		// margin-top: em(20px, 18px);
+		padding-bottom: em(20px, 18px);
+		border-style: none;
+		border-bottom: 6px solid $color-primary;
+		color: palette(black, dark);
+		font-weight: $font-weight--light;
+		width: 	90%;
+		display: block;
+		margin: em(20px, 18px) auto;
+		&:focus {	
+			border-color: $color-primary;
+		}
+		&::placeholder {	
+			font-weight: $font-weight--medium ;
+			padding-left: 10px;
+		}
+	}
+
+	.form__input ~ .btn--default {
+		width: 100%;
+	}
+}

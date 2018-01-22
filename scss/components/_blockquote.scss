@@ -1,0 +1,19 @@
+// ==========================================================================
+// Blockquote
+// ==========================================================================
+
+.blockquote {
+	@include mq(large) {
+		margin-bottom: 0;
+		font-size : 1.35em;
+		line-height: 1.35em;
+	}
+	margin-bottom: 4em;
+	font-weight: $font-weight--medium;
+	font-style : italic;
+	font-size : 1.8em;
+	padding-left: 15px;
+	line-height: 1.2em;
+	border-left: $br--default solid $color-primary;
+	border-radius: 5px 0 0 5px;
+}

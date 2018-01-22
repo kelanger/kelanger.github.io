@@ -1,0 +1,61 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+// Calculate grid columns
+ 
+.grid__col {
+  @include mq(large) {
+    @include g-columns; 
+  }
+} 
+
+// Column styles
+
+[class^="grid__col--"] {
+  @include mq(small)  {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+  }
+  @include mq(large) {
+    @include doubly(percentage($g-gutter-width / $context));   
+    // float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // &:last-of-type {
+    //   float: right;
+    // }
+  }
+}
+
+.grid__row {
+  margin: 3em 0;
+  @extend %clearfix;
+  @include mq(large){
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+}
+
+.grid__row:last-of-type {
+  @include mq(large){
+  @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+  }
+}
+
+.theme__colors.grid__col {
+  @include bg-colors($grid-colors);
+}
+
+.grid__row>.theme__colors {
+  @include mq(large) {
+    text-align: center;
+  }
+  margin: .33em 0;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
