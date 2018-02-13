@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url("background.svg");
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #39ADD1;
+  transition: .3s;
+}
+
+.nav-icon {
+	fill: #39ADD1;
+	 transition: .3s;
+}
+
+header nav ul li:hover {
+  color: #ba8058;
+}
+
+header nav ul li:hover .nav-icon{
+  fill: #ba8058;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+h3 {
+	margin: 0;
+	display: inline-block;
+}
+
+svg .st1 {
+		display: none;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+#logo {
+	transition: .3s;
+}
+
+#logo:hover {
+	transform: rotate(-15deg);
+}
+
+.logo-title {
+		color: #EAAA7F;
+		font-size: 21px;
+		text-transform: uppercase;
+		display: block;
+}
+
+.doggo {
+	display: inline-block;
+}
+
+.doggo p {
+	margin: 0;
+	color: #ba8058;
+	font-weight: bold;
+	text-align: center;
+}
+
+.sable {
+	color: #EAAA7F;
+}
+
+.fawn {
+	color: #F4C6A6;
+}
+
+.red {
+	color: #ba8058;
+}
+
+.stone {
+	color: #52595F;
+}
+
+@media (min-width: 425px) {
+
+	svg .st1 {
+		display: inline;
+	}
+
+	.logo-title {
+	display: none;
+	}
+}
